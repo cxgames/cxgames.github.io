@@ -5,71 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
-    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script>
-        let image_raw_data = `icons/smb.jpg#games/emulators/smb.html
-        icons/smb2.jpg#games/emulators/smb2.html
-        icons/light-up.jpg#games/irishgreencitrus/light-up.html
-        icons/binded-defense.jpg#games/irishgreencitrus/binded-defense.html
-        icons/interconnected.jpg#games/irishgreencitrus/interconnected.html
-        icons/sonic1.jpg#games/emulators/sonic.html
-        icons/bobl.jpg#games/emulators/bobl.html
-        icons/metroid.jpg#games/emulators/metroid.html
-        icons/mgman.jpg#games/emulators/mgman.html
-        icons/doom.jpg#games/doom
-        icons/smb3.jpg#games/emulators/smb3.html
-        icons/smb3mix.jpg#games/emulators/smb3mix.html
-        icons/smw.jpg#games/emulators/smw.html
-        icons/spacegulls.jpg#games/emulators/spacegulls.html
-        icons/tetris.jpg#games/emulators/tetris.html
-        icons/allstars.jpg#games/emulators/allstars.html
-        icons/marioland.jpg#games/emulators/marioland.html
-        icons/marioland2.jpg#games/emulators/marioland2.html
-        icons/pkmonblue.jpg#games/emulators/pkmonblue.html
-        icons/pkmonred.jpg#games/emulators/pkmonred.html
-        icons/pkmonemerald.jpg#games/emulators/pkmonemerald.html
-        icons/pkmonfirered.jpg#games/emulators/pkmonfirered.html
-        icons/pkmonleafgreen.jpg#games/emulators/pkmonleafgreen.html
-        icons/pkmonruby.jpg#games/emulators/pkmonruby.html
-        icons/pkmonsapphire.jpg#games/emulators/pkmonsapphire.html
-        icons/pkmonyellow.jpg#games/emulators/pkmonyellow.html
-        icons/sonic2.jpg#games/emulators/sonic2.html
-        icons/sonic3.jpg#games/emulators/sonic3.html
-        icons/zelda.jpg#games/emulators/zelda.html
-        icons/zeldagb.jpg#games/emulators/zeldagb.html
-        icons/zeldaminish.jpg#games/emulators/zeldaminish.html
-        icons/yoshiland.jpg#games/emulators/yoshiland.html
-        icons/bloxorz.jpg#games/flash/bloxorz.html
-        icons/ssf.jpg#games/flash/ssf.html
-        icons/fancypantsadventure.jpg#games/flash/fancypantsadventure.html
-        icons/papaspizzeria.jpg#games/flash/papaspizzeria.html
-        icons/tanktrouble.jpg#games/flash/tanktrouble.html
-        icons/learntofly.jpg#games/flash/learntofly.html`
-        let images = image_raw_data.split("\n").map(pair => pair.split("#"))
-    </script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJCEBTLQVV"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-RJCEBTLQVV');
-    </script>
-    <title>CX-Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>CX Games</title>
 </head>
 
 <body>
-    <h1 id="title-text">CITRUS GAME COLLECTION</h1>
-    <div class="masonry-container" x-data="images">
-        <template x-for="image in images">
-            <a :href="image[1]"><img :src="image[0]"></a>
-        </template>
+    <h1 id="title-text">Citrus Game Collection</h1>
+    <div class="masonry-container">
+        
+        <a href=games/emulators/smb.html><img src=icons/smb.jpg alt=" "></a>
+        
+        <a href=games/emulators/smb2.html><img src=icons/smb2.jpg alt=" "></a>
+        
+        <a href=games/irishgreencitrus/light-up.html><img src=icons/light-up.jpg alt=" "></a>
+        
+        <a href=games/irishgreencitrus/binded-defense.html><img src=icons/binded-defense.jpg alt=" "></a>
+        
+        <a href=games/irishgreencitrus/interconnected.html><img src=icons/interconnected.jpg alt=" "></a>
+        
+        <a href=games/emulators/sonic.html><img src=icons/sonic1.jpg alt=" "></a>
+        
+        <a href=games/emulators/bobl.html><img src=icons/bobl.jpg alt=" "></a>
+        
+        <a href=games/emulators/metroid.html><img src=icons/metroid.jpg alt=" "></a>
+        
+        <a href=games/emulators/mgman.html><img src=icons/mgman.jpg alt=" "></a>
+        
+        <a href=games/doom><img src=icons/doom.jpg alt=" "></a>
+        
+        <a href=games/emulators/smb3.html><img src=icons/smb3.jpg alt=" "></a>
+        
+        <a href=games/emulators/smb3mix.html><img src=icons/smb3mix.jpg alt=" "></a>
+        
+        <a href=games/emulators/smw.html><img src=icons/smw.jpg alt=" "></a>
+        
+        <a href=games/emulators/spacegulls.html><img src=icons/spacegulls.jpg alt=" "></a>
+        
+        <a href=games/emulators/tetris.html><img src=icons/tetris.jpg alt=" "></a>
+        
+        <a href=games/emulators/allstars.html><img src=icons/allstars.jpg alt=" "></a>
+        
+        <a href=games/emulators/marioland.html><img src=icons/marioland.jpg alt=" "></a>
+        
+        <a href=games/emulators/marioland2.html><img src=icons/marioland2.jpg alt=" "></a>
+        
+        <a href=games/emulators/pkmonblue.html><img src=icons/pkmonblue.jpg alt=" "></a>
+        
+        <a href=games/emulators/pkmonred.html><img src=icons/pkmonred.jpg alt=" "></a>
+        
+        <a href=games/emulators/pkmonemerald.html><img src=icons/pkmonemerald.jpg alt=" "></a>
+        
+        <a href=games/emulators/pkmonfirered.html><img src=icons/pkmonfirered.jpg alt=" "></a>
+        
+        <a href=games/emulators/pkmonleafgreen.html><img src=icons/pkmonleafgreen.jpg alt=" "></a>
+        
+        <a href=games/emulators/pkmonruby.html><img src=icons/pkmonruby.jpg alt=" "></a>
+        
+        <a href=games/emulators/pkmonsapphire.html><img src=icons/pkmonsapphire.jpg alt=" "></a>
+        
+        <a href=games/emulators/pkmonyellow.html><img src=icons/pkmonyellow.jpg alt=" "></a>
+        
+        <a href=games/emulators/sonic2.html><img src=icons/sonic2.jpg alt=" "></a>
+        
+        <a href=games/emulators/sonic3.html><img src=icons/sonic3.jpg alt=" "></a>
+        
+        <a href=games/emulators/zelda.html><img src=icons/zelda.jpg alt=" "></a>
+        
+        <a href=games/emulators/zeldagb.html><img src=icons/zeldagb.jpg alt=" "></a>
+        
+        <a href=games/emulators/zeldaminish.html><img src=icons/zeldaminish.jpg alt=" "></a>
+        
+        <a href=games/emulators/yoshiland.html><img src=icons/yoshiland.jpg alt=" "></a>
+        
+        <a href=games/flash/bloxorz.html><img src=icons/bloxorz.jpg alt=" "></a>
+        
+        <a href=games/flash/ssf.html><img src=icons/ssf.jpg alt=" "></a>
+        
+        <a href=games/flash/fancypantsadventure.html><img src=icons/fancypantsadventure.jpg alt=" "></a>
+        
+        <a href=games/flash/papaspizzeria.html><img src=icons/papaspizzeria.jpg alt=" "></a>
+        
+        <a href=games/flash/tanktrouble.html><img src=icons/tanktrouble.jpg alt=" "></a>
+        
+        <a href=games/flash/learntofly.html><img src=icons/learntofly.jpg alt=" "></a>
+        
+        <a href=games/pico8/ufo.html><img src=icons/ufo.p8.png alt=" "></a>
+        
+        <a href=games/pico8/celeste.html><img src=icons/celeste.p8.png alt=" "></a>
+        
+        <a href=games/pico8/fnf.html><img src=icons/fnf.p8.png alt=" "></a>
+        
+        <a href=games/pico8/fuz.html><img src=icons/fuz.p8.png alt=" "></a>
+        
+        <a href=games/pico8/picodriller.html><img src=icons/picodriller.p8.png alt=" "></a>
+        
+        <a href=games/emulators/maze_game.html><img src=icons/maze_game.jpg alt=" "></a>
+        
     </div>
 </body>
 

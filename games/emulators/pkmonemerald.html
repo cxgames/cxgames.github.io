@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet/less" type="text/css" href="nes.less" />
-    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <link rel="stylesheet" href="nes.css" />
+    <title>Pokémon Emerald</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJCEBTLQVV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJCEBTLQVV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-RJCEBTLQVV');
-</script>
-    <title>Pokemon Emerald</title>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-RJCEBTLQVV');
+    </script>
 </head>
+
 <body>
-    <div id="game-container" >
+    <div id="game-container">
         <div id="game"></div>
     </div>
     <script type="text/javascript">
@@ -31,4 +34,5 @@
     </script>
     <script src="emu-data/loader.js"></script>
 </body>
+
 </html>

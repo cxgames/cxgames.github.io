@@ -8,14 +8,17 @@
     <link rel="stylesheet/less" type="text/css" href="flash.less" />
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJCEBTLQVV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJCEBTLQVV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-RJCEBTLQVV');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-RJCEBTLQVV');
+    </script>
     <title>Tank Trouble</title>
 </head>
 
@@ -33,7 +36,7 @@
             player.load("swf/tanktrouble.swf");
         });
     </script>
-    <script src="ruffle/ruffle.js"></script>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </body>
 
 </html>
