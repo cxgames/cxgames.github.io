@@ -12,8 +12,21 @@
 <body>
     <h1 id="title-text">Citrus Game Collection</h1>
     <div class="masonry-container">
-        {% for game in gamelist %}
-        <a href={{ game[1] }}><img src={{ game[0] }} alt=" "></a>
+        {% for gametype in gamelistkeys %}
+            {% case gametype %} 
+                {% when "emulators","flash","irishgreencitrus" %}
+                    {% for game in gamelist[gametype] %}
+                        <a href="games/{{ gametype }}/{{ game }}.html"><img src="icons/{{ game }}.jpg" alt=" "></a>
+                    {% endfor %}
+                {% when "pico8" %}
+                    {% for game in gamelist[gametype] %}
+                        <a href="games/pico8/{{ game }}.html"><img src="icons/{{ game }}.p8.png" alt=" "></a>
+                    {% endfor %}
+                {% when "folder" %}
+                    {% for game in gamelist[gametype] %}
+                        <a href="games/{{ game }}"><img src="icons/{{ game }}.jpg" alt=" "></a>
+                    {% endfor %}
+            {% endcase %}
         {% endfor %}
     </div>
 </body>

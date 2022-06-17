@@ -1,0 +1,57 @@
+emulators:
+  - allstars
+  - banjokazooie
+  - bobl
+  - goldeneye
+  - mariokart64
+  - marioland
+  - marioland2
+  - maze_game
+  - metroid
+  - mgman
+  - pkmonblue
+  - pkmonemerald
+  - pkmonfirered
+  - pkmonleadgreen
+  - pkmonruby
+  - pkmonsapphire
+  - pkmonyellow
+  - quake64
+  - sm64
+  - smb
+  - smb2
+  - smb3
+  - smb3mix
+  - smw
+  - sonic
+  - sonic2
+  - sonic3
+  - spacegulls
+  - tetris
+  - yoshiland
+  - zelda
+  - zeldagb
+  - zeldagb
+
+flash:
+  - bloxorz
+  - fancypantsadventure
+  - learntofly
+  - papaspizzeria
+  - ssf
+  - tanktrouble
+
+irishgreencitrus:
+  - binded-defense
+  - interconnected
+  - light-up
+
+pico8:
+  - celeste
+  - funkin
+  - fuz
+  - picodriller
+  - ufo
+
+folder:
+  - doom

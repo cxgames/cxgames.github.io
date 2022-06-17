@@ -85,3 +85,18 @@ zeldaminish:
 maze_game:
   name: "Untitled Maze Game"
   platform: gb
+sm64:
+  name: "Super Mario 64"
+  platform: n64
+quake64:
+  name: "Quake 64"
+  platform: n64
+banjokazooie:
+  name: "Banjo-Kazooie"
+  platform: n64
+goldeneye:
+  name: "GoldenEye 007"
+  platform: n64
+mariokart64:
+  name: "Mario Kart 64"
+  platform: n64
