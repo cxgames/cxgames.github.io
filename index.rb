@@ -1,7 +1,8 @@
 require 'liquid'
 require 'yaml'
+require 'pp'
 @gamelist = YAML.load_file("gamelist.yml")
-
+pp @gamelist
 
 
 @inputfile = File.open("index.liquid")
@@ -9,8 +10,8 @@ require 'yaml'
 
 @template = Liquid::Template.parse(@inputfile.read)
 @outfile.write @template.render(
-    "gamelistkeys" => @gamelist.keys,
-    "gamelist" => @gamelist,
+    #"emulators_keys" => @gamelist["emulators"].keys,
+    "games" => @gamelist,
 )
 
 @outfile.close

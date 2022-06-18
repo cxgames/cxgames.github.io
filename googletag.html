@@ -1,0 +1,20 @@
+<!--
+            <!--{{gamev}} --
+            {% case gametype %}
+                {% when "emulators","flash","irishgreencitrus" %}
+        <!-- {{gametype}} games --
+                    {% for game in gamelist[gametype] %}
+        
+                    {% endfor %}
+                {% when "pico8" %}
+        <!-- Pico8 Games --
+                    {% for game in gamelist[gametype] %}
+        <a href="games/pico8/{{ game }}.html"><img src="icons/{{ game }}.p8.png" alt=""></a>
+                    {% endfor %}
+                {% when "folder" %}
+        <!-- Games in a single folder --
+                    {% for game in gamelist[gametype] %}
+        <a href="games/{{ game }}"><img src="icons/{{ game }}.jpg" alt=""></a>
+                    {% endfor %}
+            {% endcase %}
+        -->

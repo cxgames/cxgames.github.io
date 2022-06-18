@@ -1,57 +1,141 @@
 emulators:
-  - allstars
-  - banjokazooie
-  - bobl
-  - goldeneye
-  - mariokart64
-  - marioland
-  - marioland2
-  - maze_game
-  - metroid
-  - mgman
-  - pkmonblue
-  - pkmonemerald
-  - pkmonfirered
-  - pkmonleafgreen
-  - pkmonruby
-  - pkmonsapphire
-  - pkmonyellow
-  - quake64
-  - sm64
-  - smb
-  - smb2
-  - smb3
-  - smb3mix
-  - smw
-  - sonic
-  - sonic2
-  - sonic3
-  - spacegulls
-  - tetris
-  - yoshiland
-  - zelda
-  - zeldagb
-  - zeldagb
+  allstars:
+    name: "Super Mario All Stars"
+    platform: snes
+  bobl:
+    name: "Böbl"
+    platform: nes
+  marioland:
+    name: "Super Mario Land"
+    platform: gb
+  marioland2:
+    name: "Super Mario Land 2"
+    platform: gb
+  metroid:
+    name: "Metroid"
+    platform: nes
+  mgman:
+    name: "Mega Man"
+    platform: nes
+  pkmonblue:
+    name: "Pokémon Blue"
+    platform: gb
+  pkmonemerald:
+    name: "Pokémon Emerald"
+    platform: gba
+  pkmonfirered:
+    name: "Pokémon FireRed"
+    platform: gba
+  pkmonleafgreen:
+    name: "Pokémon LeafGreen"
+    platform: gba
+  pkmonred:
+    name: "Pokémon Red"
+    platform: gb
+  pkmonruby:
+    name: "Pokémon Ruby"
+    platform: gba
+  pkmonsapphire:
+    name: "Pokémon Sapphire"
+    platform: gba
+  pkmonyellow:
+    name: "Pokémon Yellow"
+    platform: gb
+  smb:
+    name: "Super Mario Bros."
+    platform: nes
+  smb2:
+    name: "Super Mario Bros. 2"
+    platform: nes
+  smb3:
+    name: "Super Mario Bros. 3"
+    platform: nes
+  smb3mix:
+    name: "Super Mario Bros. 3mix"
+    platform: nes
+  smw:
+    name: "Super Mario World"
+    platform: snes
+  sonic:
+    name: "Sonic The Hedgehog"
+    platform: segaMD
+  sonic2:
+    name: "Sonic The Hedgehog 2"
+    platform: segaMD
+  sonic3:
+    name: "Sonic The Hedgehog 3"
+    platform: segaMD
+  spacegulls:
+    name: "SpaceGulls"
+    platform: nes
+  tetris:
+    name: "Tetris"
+    platform: nes
+  yoshiland:
+    name: "Yoshi's Island"
+    platform: snes
+  zelda:
+    name: "The Legend of Zelda"
+    platform: nes
+  zeldagb:
+    name: "The Legend of Zelda: Link's Awakening"
+    platform: gb
+  zeldaminish:
+    name: "The Legend of Zelda: The Minish Cap"
+    platform: snes
+  maze_game:
+    name: "Untitled Maze Game"
+    platform: gb
+  sm64:
+    name: "Super Mario 64"
+    platform: n64
+  quake64:
+    name: "Quake 64"
+    platform: n64
+  banjokazooie:
+    name: "Banjo-Kazooie"
+    platform: n64
+  goldeneye:
+    name: "GoldenEye 007"
+    platform: n64
+  mariokart64:
+    name: "Mario Kart 64"
+    platform: n64
 
 flash:
-  - bloxorz
-  - fancypantsadventure
-  - learntofly
-  - papaspizzeria
-  - ssf
-  - tanktrouble
+  bloxorz:
+    name: "Bloxorz"
+  fancypantsadventure:
+    name: "Fancy Pants Adventure"
+  learntofly:
+    name: "Learn To Fly"
+  papaspizzeria:
+    name: "Papa's Pizzeria"
+  ssf:
+    name: "Super Smash Flash"
+  tanktrouble:
+    name: "Tank Trouble"
 
 irishgreencitrus:
-  - binded-defense
-  - interconnected
-  - light-up
+  binded-defense:
+    name: "Binded Defense"
+  interconnected:
+    name: "Interconnected"
+  light-up:
+    name: "Light-Up!"
 
 pico8:
-  - celeste
-  - funkin
-  - fuz
-  - picodriller
-  - ufo
+  celeste:
+    name: "Celeste"
+  funkin:
+    name: "Pico Night Funkin"
+  fuz:
+    name: "Fuz"
+  picodriller:
+    name: "Pico Driller"
+  ufo:
+    name: "UFO: A Space Odyssey"
 
 folder:
-  - doom
+  doom:
+    name: "DOOM"
