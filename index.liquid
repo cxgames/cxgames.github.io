@@ -11,6 +11,13 @@
 
 <body>
     <h1 id="title-text">Citrus Game Collection</h1>
+    {%- assign gamecount = 0 -%}
+    {%- for gamet in games -%}
+        {%- for g in gamet[1] -%}
+            {%- assign gamecount = gamecount | plus: 1 -%}
+        {%- endfor -%}
+    {%- endfor %}
+    <h2 id="subtitle-text">Now with {{ gamecount }} games!</h2>
     <input type="text" name="Search" id="searcher" placeholder="Search" oninput="">
     <div>
     <label for="platformfilter">FILTER PLATFORM: </label>
@@ -31,23 +38,21 @@
     <br>
     <section id="masonry-container">
         <!-- Game Emulators -->
-        {% for game in games["emulators"] %}
-            <a href="games/emulators/{{ game[0] }}.html" g_platform="{{game[1].platform}}" g_name="{{game[1].name}}"><img src="icons/{{ game[0] }}.jpg" alt="{{game[1].name}}"></a>
-        {% endfor %}
+        {% for game in games["emulators"] -%}
+                <a href="games/emulators/{{ game[0] }}.html" g_platform="{{game[1].platform}}" g_name="{{game[1].name}}"><img src="icons/{{ game[0] }}.jpg" alt="{{game[1].name}}"></a>
+        {% endfor -%}
 
-        {% assign othergames = "flash,irishgreencitrus,pico8" | split: ',' %}
-        {% for gametype in othergames %}
-            <!-- {{gametype}} Games -->
-            {% for game in games[gametype] %}
+        {%- assign othergames = "flash,irishgreencitrus,pico8" | split: ',' -%}
+        {%- for gametype in othergames %}
+        <!-- {{gametype}} Games -->
+            {% for game in games[gametype] -%}
             <a href="games/{{gametype}}/{{ game[0] }}.html" g_platform="{{gametype}}" g_name="{{game[1].name}}"><img src="icons/{{ game[0] }}.jpg" alt="{{game[1].name}}"></a>
-            {% endfor %}
-        {% endfor %}
-
-        {% for game in games["folder"] %}
-            <!-- Folder Games -->
-            <a href="games/emulators/{{ game[0] }}" g_platform="native" g_name="{{game[1].name}}"><img src="icons/{{ game[0] }}.jpg" alt="{{game[1].name}}"></a>
-        {% endfor %}
-        
+            {% endfor -%}
+        {%- endfor %}
+        <!-- Native Ports -->
+        {% for game in games["folder"] -%}
+            <a href="games/native/{{ game[0] }}" g_platform="native" g_name="{{game[1].name}}"><img src="icons/{{ game[0] }}.jpg" alt="{{game[1].name}}"></a>
+        {% endfor -%}
     </section>
     <script src="https://unpkg.com/fuzzy-search@3.2.1/dist/FuzzySearch.js"></script>
     <script src="index.js"></script>

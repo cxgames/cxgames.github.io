@@ -12,12 +12,15 @@ label {
 .search_hidden, .platform_hidden {
   display: none;
 }
-#title-text {
+#title-text, #subtitle-text {
   text-align: center;
   color: white;
   text-transform: uppercase;
   font-family: sans-serif;
   font-size: 3em;
+}
+#subtitle-text {
+  font-size: 2em;
 }
 #searcher {
   margin-left: 3em;

@@ -82,13 +82,10 @@ emulators:
     platform: gb
   zeldaminish:
     name: "The Legend of Zelda: The Minish Cap"
-    platform: snes
+    platform: gba
   maze_game:
     name: "Untitled Maze Game"
     platform: gb
-  sm64:
-    name: "Super Mario 64"
-    platform: n64
   quake64:
     name: "Quake 64"
     platform: n64
@@ -115,6 +112,10 @@ flash:
     name: "Super Smash Flash"
   tanktrouble:
     name: "Tank Trouble"
+  worldshardestgame:
+    name: "World's Hardest Game"
+  worldshardestgame2:
+    name: "World's Hardest Game 2"
 
 irishgreencitrus:
   binded-defense:
@@ -127,7 +128,7 @@ irishgreencitrus:
 pico8:
   celeste:
     name: "Celeste"
-  funkin:
+  picofunkin:
     name: "Pico Night Funkin"
   fuz:
     name: "Fuz"
@@ -135,7 +136,13 @@ pico8:
     name: "Pico Driller"
   ufo:
     name: "UFO: A Space Odyssey"
+  justoneboss:
+    name: "Just One Boss"
 
 folder:
   doom:
     name: "DOOM"
+  sm64:
+    name: "Super Mario 64 (port)"
+  funkin:
+    name: "Friday Night Funkin'"

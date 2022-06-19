@@ -81,13 +81,11 @@ zeldagb:
   platform: gb
 zeldaminish:
   name: "The Legend of Zelda: The Minish Cap"
-  platform: snes
+  platform: gba
 maze_game:
   name: "Untitled Maze Game"
   platform: gb
-sm64:
-  name: "Super Mario 64"
-  platform: n64
+
 quake64:
   name: "Quake 64"
   platform: n64
