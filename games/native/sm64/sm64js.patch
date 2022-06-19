@@ -1,0 +1,49 @@
+--- sm64new.js	2022-06-19 20:01:58.504954600 +0100
++++ sm64.us.f3dex2e.js	2022-06-19 20:12:10.233434100 +0100
+@@ -9798,13 +9798,13 @@
+   }
+ }
+ 
+-
++var interactions;
+ 
+ 
+ /** @type {function(Array=)} */
+ function run(args) {
+   args = args || arguments_;
+-
++  if (interactions == false) return;
+   if (runDependencies > 0) {
+     return;
+   }
+@@ -9925,7 +9925,7 @@
+     Module['preInit'].pop()();
+   }
+ }
+-
++/*
+ // shouldRunNow refers to calling main(), not run().
+ var shouldRunNow = true;
+ 
+@@ -9936,7 +9936,21 @@
+ 
+ run();
+ 
++*/
++// shouldRunNow refers to calling main(), not run().
++var shouldRunNow = true;
++interactions = false;
++
++if (Module['noInitialRun']) shouldRunNow = false;
++
++
++noExitRuntime = true;
++window.onload = function() {
++window.addEventListener("mouseup", function(e) {
++  interactions = true;
+ 
++  run();
++}, {once: true});};
+ 
+ 
+ 
